@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Halo Ayang</title>
+</head>
+<body>
+    <section class="text-gray-600 body-font">
+        <form id="FORM" action="https://formspree.io/f/xzboynlq" method="POST">
+            <div class="container">
+                <div class="w-full mb-12">
+                    <h1 class="font-bold title-font mb-4 text-gray-900 header">Hai Ayang</h1>
+                    <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Jangan lupa diisi ya! hehe<br>Kamu boleh ko curhat disini, privasi kamu aman kok!</p>
+                </div>
+                <div class="input-box">
+                    <label for="NAME">Nama</label>
+                    <input name="name" type="text" id="NAME" class="input" placeholder="Nama">
+                    <!-- <label for="EMAIL">Email</label>
+                    <input name="email" type="email" id="EMAIL" class="input" placeholder="Email"> -->
+                    <label for="nama-crush-pacar">Nama Crush/Pacar</label>
+                    <input name="nama crush/pacar" type="nama-crush-pacar" id="EMAIL" class="input" placeholder="Jawab jujur ya!">
+                    <label for="KeluhKesah">Harapanmu ke pacar</label>
+                    <textarea name="harapan" id="KeluhKesah" class="input" value="" placeholder="Kamu pengen pacar kamu gimana kedepannya?"></textarea>
+                    <label for="MESSAGE">Curhatan kamu</label>
+                    <textarea name="message" id="MESSAGE" class="input" value="" placeholder="Masukkin curhatan kamu disini!"></textarea>
+                    <button type="submit" class="text-white border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg button-submit" onclick="loadLoader()">Submit</button>
+                </div>
+            </div>
+        </form>
+    </section>
+    <div class="loader">
+        <div class="loading-screen"><div></div></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
